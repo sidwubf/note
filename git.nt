@@ -1,0 +1,10 @@
+git remote add (共享仓库的名字) (共享仓库的地址)
+git push (共享仓库的名字) (要推送的本地的分支):(推送到远程仓库上的分支)
+
+git branch
+git config
+
+git checkout
+
+git merge
+
