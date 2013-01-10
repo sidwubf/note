@@ -1,0 +1,5 @@
+1.install
+        phpize 
+        ./configure 
+        make
+        在php.ini添加相应代码，例如extension=xxxx.so
