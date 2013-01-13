@@ -26,3 +26,6 @@ git merge
 git mergetool
 
 git rebase
+
+git reflow
+git log
