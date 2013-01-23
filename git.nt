@@ -1,3 +1,16 @@
+git init
+git clone
+
+git add
+
+.gitignore      忽略文件
+
+git status
+
+git diff
+
+git commit
+
 git remote add (共享仓库的名字) (共享仓库的地址)
 git push (共享仓库的名字) (要推送的本地的分支):(推送到远程仓库上的分支)
 http://git-scm.com/book/zh/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF
@@ -29,3 +42,9 @@ git rebase
 
 git reflow
 git log
+
+实例：
+git log -p -2 显示最近两次更新，并显示内容差异
+git log --pretty=[oneline|full|...] 显示方式（漂亮程度）
+git log --graph
+git commit --amend -m 'test' 撤销上次commit，重新生成新的commit
