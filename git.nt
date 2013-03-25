@@ -11,6 +11,17 @@ git diff
 
 git commit
 
+//rebase master
+git checkout master
+git pull --rebase origin master
+git checkout xxx
+git pull -rebase xxx xxx
+git rebase master
+git status
+git rebase --continue
+git add .
+git push -f xxx xxx
+
 git remote add (共享仓库的名字) (共享仓库的地址)
 git push (共享仓库的名字) (要推送的本地的分支):(推送到远程仓库上的分支)
 http://git-scm.com/book/zh/Git-%E5%88%86%E6%94%AF-%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF
