@@ -1,0 +1,33 @@
+1.download mysql php apache source code
+
+2.new mysql user
+      groupadd mysql
+      useradd -g mysql mysql
+
+3.compile and install mysql
+      ./configure --prefix=/usr/local/mysql
+      make
+      make install
+
+4.configure mysql
+      cp support-files/my-medium.cnf /etc/my.cnf
+      cd /usr/local/mysql
+      bin/mysql_install_db --user=mysql
+      chown -R root .
+      chown -R mysql lib
+      chown -R mysql .
+
+5.compile and install apache
+      ./configure --prefix=/usr/local/apache2
+      make
+      make install
+[./configure --prefix=/usr/local/apache2 --enable-mime-magic --enable-expires
+--enable-headers --enable-ssl --enable-http --enable-info --enable-dir
+--enable-rewrite --enable-so]
+
+6.compile and install php
+      ./configure --prefix=/usr/local/php5 --with-apxs2=/usr/local/apache2/bin/apxs --with-mysql=shared,/usr/local/mysql --with-zlib --with-gettext --with-gdbm --with-sqlite
+      cp php.ini-dist /usr/local/php5/lib
+
+7.configure apache
+      change httpd.conf
