@@ -5,3 +5,5 @@ df -lh //查看硬盘信息
 shutdown -h now //关机
 
 less /etc/passwd
+
+netstat -lnp //查看端口开通情况
