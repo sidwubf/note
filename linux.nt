@@ -2,3 +2,4 @@ last reboot //查看重启纪录
 
 df -lh //查看硬盘信息
 
+shutdown -h now //关机
