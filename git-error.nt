@@ -1,0 +1,5 @@
+1.insufficient permission for adding an object to repository database
+cd /path/to/repo.git
+chgrp -R groupname .
+chmod -R g+rwX .
+find . -type d -exec chmod g+s '{}' +
