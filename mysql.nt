@@ -1,1 +1,2 @@
-1.索引
+//修改密码
+usr/local/mysql/bin/mysqladmin -u root -p password 'xxxxxxx'
