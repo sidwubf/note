@@ -1,0 +1,35 @@
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        ServerName xxx.com
+        DocumentRoot /xxx/xxx
+
+</VirtualHost>
+
+
+<IfModule mod_ssl.c>
+<VirtualHost *:443>
+
+        ServerAdmin webmaster@localhost
+        ServerName xxx.com
+        DocumentRoot /xxx/xxx
+
+        #   SSL Engine Switch:
+        #   Enable/Disable SSL for this virtual host.
+        SSLEngine on
+
+        #   A self-signed (snakeoil) certificate can be created by installing
+        #   the ssl-cert package. See
+        #   /usr/share/doc/apache2.2-common/README.Debian.gz for more info.
+        #   If both key and certificate are stored in the same file, only the
+        #   SSLCertificateFile directive is needed.
+        SSLCertificateFile /etc/apache2/ssl/xxx.com/apache.crt
+        SSLCertificateKeyFile /etc/apache2/ssl/xxx.com/apache.key
+</VirtualHost>
+
+</IfModule>
+
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/xxx.com/apache.key -out /etc/apache2/ssl/xxx.com/apache.crt
+
+a2ensite xxx.com
+
+service apache2 reload
