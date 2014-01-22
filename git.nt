@@ -4,6 +4,9 @@ git clone
 git add
 
 .gitignore      忽略文件
+git update-index --assume-unchanged config.php  //ignore locally
+
+git reset
 
 git status
 
