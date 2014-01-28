@@ -30,5 +30,6 @@ module.exports = function(grunt) {
 };
 
 npm install grunt-contrib-jshint --save-dev // add grunt-contrib-jshint to package.json's devDependencies
+grunt.loadNpmTasks('grunt-contrib-jshint');
 
 grunt deploy --env dev
