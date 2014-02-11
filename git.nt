@@ -3,6 +3,10 @@ git clone
 
 git add
 
+//忽略本次操作
+git reset --hard
+git clean -xdf
+
 .gitignore      忽略文件
 git update-index --assume-unchanged config.php  //ignore locally
 
