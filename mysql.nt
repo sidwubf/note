@@ -3,3 +3,5 @@ usr/local/mysql/bin/mysqladmin -u root -p password 'xxxxxxx'
 
 //import
 mysql -u root --password='<password>' store < ~/dump.sql
+
+mysqldump -u username -p database > filename
