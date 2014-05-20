@@ -1,0 +1,23 @@
+sockaddr_in   <netinet/in.h>
+sockaddr      <netinet/in.h>
+socket        <sys/socket.h>
+connect       <sys/types.h> & <sys/socket.h>
+bind          <sys/types.h> & <sys/socket.h>
+listen        <sys/types.h> & <sys/socket.h>
+accept        <sys/types.h> & <sys/socket.h>
+send          <sys/types.h> & <sys/socket.h>
+recv          <sys/types.h> & <sys/socket.h>
+sendto        <sys/types.h> & <sys/socket.h>
+recvfrom      <sys/types.h> & <sys/socket.h>
+read          <unistd.h>
+write         <unistd.h>
+close         <unistd.h>
+memset        <string.h>
+bzero         <strings.h>
+exit          <stdlib.h>
+getaddrinfo, freeaddrinfo, gai_strerror   <sys/types.h> & <sys/socket.h> & <netdb.h>
+inet_pton, inet_ntop     <arpa/inet.h>
+inet_aton, inet_addr, inet_network, inet_ntoa, inet_makeaddr, inet_lnaof, inet_netof    <sys/socket.h> & <netinet/in.h> & <arpa/inet.h>
+getnameinfo   <sys/socket.h> & <netdb.h>
+htonl, htons, ntohl, ntohs    <arpa/inet.h>
+printf, fprintf, sprintf    <stdio.h>
