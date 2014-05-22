@@ -1,0 +1,14 @@
+tar xvf FileName.tar //解压
+tar cvf FileName.tar DirName //压缩
+gunzip FileName.gz
+gzip FileName
+tar zxvf FileName.tar.gz
+tar zcvf FileName.tar.gz DirName
+bunzip2 FileName.bz2
+tar jxvf FileName.tar.bz2
+tar jcvf FileName.tar.bz2 DirName
+tar jxvf FileName.tar.bz
+tar Zxvf FileName.tar.Z
+unzip FileName.zip
+rar x FileName.rar
+rar a FileName.rar DirName
