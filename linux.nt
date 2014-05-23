@@ -9,3 +9,7 @@ less /etc/passwd
 netstat -lnp //查看端口开通情况
 
 wc -clmw filename //统计行数、字节数等
+
+crontab -l
+crontab -e
+min hour day month week bash
