@@ -12,3 +12,5 @@ tar Zxvf FileName.tar.Z
 unzip FileName.zip
 rar x FileName.rar
 rar a FileName.rar DirName
+xz -d ***.tar.xz
+tar -xvf  ***.tar
